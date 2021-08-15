@@ -1,0 +1,32 @@
+{% set campaigns = __SELF__.campaigns %}
+
+<div class="container mt-5 mb-5">
+    {% for campaign in campaigns %}
+        <div class="row mt-5">
+            <div class="col-sm p-0 mr-4">
+                <img src="{{ campaign.picture.thumb(400,auto) }}" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+            <div class="col-sm text-center p-0">
+                <h5 class="mt-3">{{ campaign.expire_at }}</h5>
+                <h2 class="mt-2 mb-5">{{ campaign.name }}</h2>
+                <div class="row row-cols-2 p-0">
+                    <div class="col-6 p-0" style="border-right:1px solid #cecece;">
+                        <p>Suma stransa</p>
+                    </div>
+                    <div class="col-6 p-0">
+                        <p>Target</p>
+                    </div>
+                    <div class="col-6 p-0" style="border-bottom:1px solid #cecece; border-right:1px solid #cecece; ">
+                        <h3>{{ campaign.raised_money }} ron</h3>
+                    </div>
+                    <div class="col-6 p-0" style="border-bottom:1px solid #cecece;">
+                        <h3>{{ campaign.target_money }} ron</h3>
+                    </div>
+                </div>
+                <a href="campanii/{{ campaign.slug }}">
+                    <button type="button" class="btn btn-warning mt-4">detalii</button>
+                </a>
+            </div>
+        </div>
+    {% endfor %}
+</div>

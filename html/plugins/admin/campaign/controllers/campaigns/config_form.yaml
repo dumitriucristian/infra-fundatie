@@ -1,0 +1,10 @@
+name: Campaigns
+form: $/admin/campaign/models/campaign/fields.yaml
+modelClass: Admin\Campaign\Models\Campaign
+defaultRedirect: admin/campaign/campaigns
+create:
+    redirect: 'admin/campaign/campaigns/update/:id'
+    redirectClose: admin/campaign/campaigns
+update:
+    redirect: admin/campaign/campaigns
+    redirectClose: admin/campaign/campaigns

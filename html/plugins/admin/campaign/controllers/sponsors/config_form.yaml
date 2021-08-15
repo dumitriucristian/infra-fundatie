@@ -1,0 +1,10 @@
+name: Sponsors
+form: $/admin/campaign/models/sponsor/fields.yaml
+modelClass: Admin\Campaign\Models\Sponsor
+defaultRedirect: admin/campaign/sponsors
+create:
+    redirect: 'admin/campaign/sponsors/update/:id'
+    redirectClose: admin/campaign/sponsors
+update:
+    redirect: admin/campaign/sponsors
+    redirectClose: admin/campaign/sponsors

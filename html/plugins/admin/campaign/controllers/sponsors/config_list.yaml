@@ -1,0 +1,12 @@
+list: $/admin/campaign/models/sponsor/columns.yaml
+modelClass: Admin\Campaign\Models\Sponsor
+title: Sponsors
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'admin/campaign/sponsors/update/:id'

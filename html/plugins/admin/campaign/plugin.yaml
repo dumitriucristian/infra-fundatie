@@ -1,0 +1,24 @@
+plugin:
+    name: 'admin.campaign::lang.plugin.name'
+    description: 'admin.campaign::lang.plugin.description'
+    author: admin
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Campaign
+        url: admin/campaign/campaigns
+        icon: icon-heart
+        sideMenu:
+            side-menu-item:
+                label: 'Campaign Type'
+                url: admin/campaign/campaigntypes
+                icon: icon-tags
+            side-menu-item2:
+                label: Campaign
+                url: admin/campaign/campaigns
+                icon: icon-heart
+            side-menu-item3:
+                label: Sponsor
+                url: admin/campaign/sponsors
+                icon: icon-money

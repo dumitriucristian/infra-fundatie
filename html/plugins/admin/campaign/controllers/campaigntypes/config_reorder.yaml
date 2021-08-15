@@ -1,0 +1,4 @@
+title: CampaignTypes
+modelClass: Admin\Campaign\Models\CampaignType
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,4 @@
+title: Sponsors
+modelClass: Admin\Campaign\Models\Sponsor
+toolbar:
+    buttons: reorder_toolbar

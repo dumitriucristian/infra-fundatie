@@ -1,0 +1,10 @@
+name: CampaignTypes
+form: $/admin/campaign/models/campaigntype/fields.yaml
+modelClass: Admin\Campaign\Models\CampaignType
+defaultRedirect: admin/campaign/campaigntypes
+create:
+    redirect: 'admin/campaign/campaigntypes/update/:id'
+    redirectClose: admin/campaign/campaigntypes
+update:
+    redirect: admin/campaign/campaigntypes
+    redirectClose: admin/campaign/campaigntypes

@@ -1,0 +1,16 @@
+columns:
+    name:
+        label: Nume
+        type: text
+        searchable: true
+        sortable: true
+    target_money:
+        label: Target
+        type: number
+        searchable: false
+        sortable: true
+    year:
+        label: An
+        type: number
+        searchable: true
+        sortable: true

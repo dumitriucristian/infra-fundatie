@@ -1,0 +1,14 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table admin_campaign_'
+    - builder_table_create_admin_campaign_.php
+1.0.3:
+    - 'Created table admin_campaign_type'
+    - builder_table_create_admin_campaign_type.php
+1.0.4:
+    - 'Created table admin_campaign_sponsor'
+    - builder_table_create_admin_campaign_sponsor.php
+1.0.5:
+    - 'Created table admin_campaign_sponsors_campaigns'
+    - builder_table_create_admin_campaign_sponsors_campaigns.php

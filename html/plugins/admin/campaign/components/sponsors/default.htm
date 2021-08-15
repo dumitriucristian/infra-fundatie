@@ -1,0 +1,8 @@
+{% set campaign = __SELF__.campaign %}
+{% set sponsors = __SELF__.sponsors %}
+
+<div class="container mt-5 mb-5">
+    {% for sponsor in sponsors %}
+        <h1>{{ sponsor.name }}</h1>
+    {% endfor %}
+</div>
