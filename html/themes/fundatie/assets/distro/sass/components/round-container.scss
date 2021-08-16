@@ -1,0 +1,14 @@
+   @import '../general';
+
+   .round-container{
+        background-color: white;
+        height: 8em;
+        width: 8em;
+        text-align: center;
+        vertical-align: middle;
+        padding: 3em 2em;
+        font-family: 'galano-black';
+        color: $purple;
+        box-shadow: #6ea8ff42 0px 0px 15px;
+        margin:1em;
+   } 

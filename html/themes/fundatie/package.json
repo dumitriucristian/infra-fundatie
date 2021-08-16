@@ -1,0 +1,27 @@
+{
+  "name": "fundatie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.27",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.50.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.3",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0"
+  }
+}

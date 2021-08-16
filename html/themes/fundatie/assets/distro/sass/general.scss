@@ -1,0 +1,50 @@
+
+//fonts
+$font-path: "/themes/fundatie/assets/fonts";
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$font-path}/Galano-Grotesque-Black_0.otf");
+    font-family: "galano-black";
+}
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$font-path}/Galano-Grotesque-Semi-Bold_0.otf");
+    font-family: "galano-semi-bold";
+}
+
+
+@font-face {
+    // This is parsed as a normal function call that takes a quoted string.
+    src: url("#{$font-path}/Galano-Grotesque-Light_0.otf");
+    font-family: "galano-light";
+}
+
+
+
+body {
+    font-family:galano-light;
+}
+
+h1, h2, h3, h3 {
+    font-family:galano-black;
+    color: $purple;
+}
+
+//Colors
+$purple: #6255a4;
+$skyblue: #eaf6fb;
+$pink:#dc4199;
+
+//Custom components
+.btn-doneaza{
+    background-color: $pink;
+    color:white;
+    font-weight:bold;
+}
+
+a {
+    font-weight: bold;
+    color: $pink;
+}

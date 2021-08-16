@@ -1,0 +1,23 @@
+@import '../general';
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .dropdown-toggle:after{
+     display: none;
+ }
+
+.inimioara-donatii{
+    width: 2em;
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link {
+    color: $purple  ;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: galano-semi-bold;
+}
