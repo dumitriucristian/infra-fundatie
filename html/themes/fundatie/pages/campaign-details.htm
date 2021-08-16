@@ -1,24 +1,29 @@
 url = "/campanie"
 layout = "detalii-campanie"
 title = "Campanie"
+
+[campaign]
+year = 2022
+campaignType = 1
+name = "Campanie"
+
+[sponsors]
+year = 2022
+campaignType = 1
+name = "Campanie"
 ==
 <div class="container d-flex justify-content-center">
 
     <div class="col-8 m-0 p-0">
         <h1 class="text-center">Campania "Adopta o mama" a ajuns la editia XI</h1>
 
-        {% partial 'progressbar' %}
+        {% component "campaign" %}
 
         <a class="long-btn text-center mt-2 mb-2" href="#"><img  class="me-2" src="{{'assets/images/inimioara_donatii.svg'|theme}}">doneaza</a>
 
         <h2 class="text-center mb-5">Multumim partenerilor strategici</h2>
 
-        <div class="owl-carousel">
-            <div class="oval"><a class="btn col-2" href="#"><img src="{{'assets/images/paypal-logo.png'|theme}}"></a></div>
-            <div class="oval"><a class="btn col-2" href="#"><img src="{{'assets/images/revolut-logo.png'|theme}}"></a></div>
-            <div class="oval"><a class="btn col-2" href="#"><img src="{{'assets/images/paypal-logo.png'|theme}}"></a></div>
-            <div class="oval"><a class="btn col-2" href="#"><img src="{{'assets/images/revolut-logo.png'|theme}}"></a></div>
-        </div>
+        {% component "sponsors" %}
         
         <h2 class="text-center mb-5">Vezi si campaniile din anii precedenti</h2>
 
