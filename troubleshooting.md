@@ -1,3 +1,8 @@
+
+#app key invalid or do not exist
+add to .env file APP_KEY=null
+run php artisan key:generate
+key was generated remove "=null" from generated hash
 #file_put_contents(c:\composer): failed to open stream: Permission denied  
 clear cache     
 1. ```php artisan cache:clear```    
