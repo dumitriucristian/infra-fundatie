@@ -6,6 +6,8 @@ services:
     #image: aspendigital/octobercms:latest
     ports:
       - 80:80
+    depends_on:
+      - mysql
     volumes:
       - .:/var/www/
     networks:
@@ -13,14 +15,31 @@ services:
 
     environment:
       - DB_TYPE=mysql
-      - DB_HOST=164.90.166.198
+      - DB_HOST=fundatie_mysql_1 #DB_HOST should match the service name of the database container
       - DB_DATABASE=fundatie
-      - DB_USERNAME=admin       
-      - DB_PASSWORD=admin
+      - DB_USERNAME=root
+      - DB_PASSWORD=root
     container_name: fundatie_web_1
 
+  mysql:
+    image: mysql:8.0.26
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=fundatie
 
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - code-network
+    container_name: fundatie_mysql_1
+    restart: always
   
 networks:
   code-network:
     driver: bridge
+volumes:
+  mysql-data:
+
