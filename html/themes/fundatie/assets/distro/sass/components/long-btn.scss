@@ -1,0 +1,16 @@
+@import '../general';
+
+.long-btn{
+    background-color:$pink;
+    width: 100%;
+    display: block;
+    border-radius: 2em;
+    height: 35px;
+    color: $white;
+    text-decoration:none;
+    
+    img{
+        height:18px;
+    }
+
+}

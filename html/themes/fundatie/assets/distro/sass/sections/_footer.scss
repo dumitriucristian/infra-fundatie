@@ -1,0 +1,31 @@
+@import "../general";
+
+.bottom-footer{
+    background-color: $purple;
+    color:white;
+}
+
+a {
+    color:grey;
+}
+
+.phone{
+    color:$purple;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: "galano-black";
+}
+.footer{
+    background-color: $skyblue;
+    .footer-icon{
+        width:2em;
+    }
+}
+
+.top-footer-shadow{
+    width: 100%;
+    height:25px;
+    background-image: url('/themes/fundatie/assets/images/shape_despartitor_header.svg');
+    background-position: center;
+}
+

@@ -1,0 +1,12 @@
+//@import "~bootstrap/scss/bootstrap";
+//$bg-light:white;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "sections/navbar";
+@import "sections/top-bar";
+@import "sections/banner_container_campanii";
+@import "sections/footer";
+@import "components/campaign";
+@import "components/round-container";
+@import "components/oval-container";
+@import "components/long-btn";

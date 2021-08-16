@@ -1,0 +1,8 @@
+{
+    "name": "chris/chris-theme",
+    "type": "october-theme",
+    "description": "foundation",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

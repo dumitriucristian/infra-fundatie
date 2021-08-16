@@ -1,0 +1,8 @@
+//@import "~bootstrap/scss/bootstrap";
+
+$green: rgb(221, 166, 166);
+$primary: $green;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "../sass/sections/navbar";
+@use 'custom';

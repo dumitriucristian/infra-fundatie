@@ -1,0 +1,99 @@
+.img-wrapper{
+    width: 50%;
+    height: 400px;
+   img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4em 0 0 4em;
+    box-shadow: #80008059 0px 0px 105px;
+    }
+}
+
+
+
+.campaign-details{
+    height:400px;
+    width:100%;
+    background-color: white;
+    border-radius: 0 2em 2em 0;
+    box-shadow: #80008059 0px 0px 105px;
+
+}
+
+.date{
+    color: grey;
+    font-family: 'galano-semi-bold';
+    font-size: 1.7em;
+}
+
+.title{
+    font-size: 1.3em;
+    color: $purple;
+    font-family: 'galano-black';
+}
+
+.border-right {
+    border-right: 1px solid grey;
+}
+
+.amount {
+    border-bottom: 1px solid grey;
+    height: 55px;
+}
+
+.main-layer {
+    border-radius: 2em;
+    background-color:$purple;
+    height:35px;
+
+    span {
+        color: transparent;
+    }
+}
+.done-layer {
+    background-color:$pink;
+    height:35px;
+    border-radius: 2em 0 0 2em;
+}
+.percent{
+    position: relative;
+    top: -35px;
+    font-family: 'galano-black';
+    color: white;
+    font-size: 1.2em;
+}
+
+.detail-btn{
+    background-color: #f3e603;
+    font-family: 'galano-light';
+    width: 115px;
+}
+
+.big-text{
+    margin: 0;
+    padding: 0;
+    font-family: 'galano-semi-bold';
+    color: $pink;
+}
+.small-text{
+    font-size: 0.8em;
+    color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .img-wrapper {
+    width:100%;
+    height:200px;
+    img {
+        border-radius: 4em 4em 0 0;
+
+    }
+  }
+  .campaign-details {
+      border-radius:0 0 4em 4em;
+  }
+}

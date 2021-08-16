@@ -1,0 +1,39 @@
+@import "../general.scss";
+
+.content-banner{
+    background-color: skyblue;
+    height:345px;
+    color:$purple;
+    background-image: url('/themes/fundatie/assets/images/bg-sectiune.jpg');
+    background-position: center;
+    position:relative;
+
+    h1{
+        font-family: Galano-black;
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+}
+
+.top-header-shadow{
+    width: 100%;
+    height:25px;
+    background-image: url('/themes/fundatie/assets/images/shape_despartitor_header_top.svg');
+    background-position: center;
+    background-color: #fff0 !important;
+}
+
+.bottom-header-shadow{
+    background-image: url(/themes/fundatie/assets/images/shape_despartitor_bottom.svg);
+    background-position: center;
+    width: 100%;
+    position: absolute;
+    bottom: -2px;
+    height: 32px;
+}
+
+.logo{
+    width:150px;
+    background-color: white;
+    top:-70px;
+}
