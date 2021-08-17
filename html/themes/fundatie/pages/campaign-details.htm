@@ -1,16 +1,14 @@
-url = "/campanie"
+url = "/campanie/:slug/:year"
 layout = "detalii-campanie"
 title = "Campanie"
 
 [campaign]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = {{ :year }}
+slug = {{ :slug }}
 
 [sponsors]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = {{ :year }}
+slug = {{ :slug }}
 ==
 <div class="container d-flex justify-content-center">
 
@@ -20,8 +18,6 @@ name = "Campanie"
         {% component "campaign" %}
 
         <a class="long-btn text-center mt-2 mb-2" href="#"><img  class="me-2" src="{{'assets/images/inimioara_donatii.svg'|theme}}">doneaza</a>
-
-        <h2 class="text-center mb-5">Multumim partenerilor strategici</h2>
 
         {% component "sponsors" %}
         
