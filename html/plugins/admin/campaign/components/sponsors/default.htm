@@ -2,12 +2,15 @@
 {% set sponsors = __SELF__.sponsors %}
 
 
- <div class="owl-carousel">
-    {% for sponsor in sponsors %}
-        <div class="oval">
-            <a class="btn col-2" href="#">
-                <img src="{{ sponsor.picture.thumb(400,auto) }}">
-            </a>
-        </div>
-    {% endfor %}
-</div>
+{% if sponsors.first() != null %}
+    <h2 class="text-center mb-5">Multumim partenerilor strategici</h2>
+    <div class="owl-carousel">
+        {% for sponsor in sponsors %}
+            <div class="oval">
+                <a class="btn col-2" href="#">
+                    <img src="{{ sponsor.picture.thumb(400,auto) }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
