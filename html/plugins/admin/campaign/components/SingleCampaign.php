@@ -20,7 +20,9 @@ class SingleCampaign extends ComponentBase
     
     public function onRun()
     {
-        $this->campaign = $this->loadCampaign($this->property('campaignType'),$this->property('year'),$this->property('name'));
+        $this->campaign = $this->loadCampaign($this->property('year'),$this->property('slug'));
+        if(!$this->campaign)
+            return redirect('404');  
     }
     
 }

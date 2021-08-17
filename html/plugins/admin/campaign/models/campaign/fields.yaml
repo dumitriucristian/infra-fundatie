@@ -7,7 +7,7 @@ fields:
     target_money:
         label: Target
         span: auto
-        required: 1
+        required: 0
         type: number
     expire_at:
         label: 'Data de expirare a campaniei'
@@ -91,8 +91,19 @@ fields:
         type: relation
     sponsors:
         label: Sponsors
-        span: auto
         nameFrom: name
         descriptionFrom: description
-        required: 1
+        span: auto
+        required: 0
         type: relation
+    finalized:
+        label: Finalized
+        span: auto
+        required: 1
+        type: switch
+    description:
+        label: Description
+        size: ''
+        span: auto
+        required: 1
+        type: richeditor

@@ -1,0 +1,10 @@
+{% set campaigns = __SELF__.campaigns %}
+
+{% if campaigns.first() != null %}
+    <h2 class="text-center mb-5">Vezi si campaniile din anii precedenti</h2>
+    <div class="owl-carousel row">
+        {% for campaign in campaigns %}
+            <div class="m-2"><a href="{{ campaign.urlToCampaign() }}" class="btn rounded-circle round-container">{{ campaign.year }}</a></div>
+        {% endfor %}
+    </div>
+{% endif %}

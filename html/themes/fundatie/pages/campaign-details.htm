@@ -1,16 +1,18 @@
-url = "/campanie"
+url = "/campanie/:slug/:year"
 layout = "detalii-campanie"
 title = "Campanie"
 
 [campaign]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = "{{ :year }}"
+slug = "{{ :slug }}"
 
 [sponsors]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = "{{ :year }}"
+slug = "{{ :slug }}"
+
+[years]
+year = "{{ :year }}"
+slug = "{{ :slug }}"
 ==
 <div class="container d-flex justify-content-center">
 
@@ -21,19 +23,9 @@ name = "Campanie"
 
         <a class="long-btn text-center mt-2 mb-2" href="#"><img  class="me-2" src="{{'assets/images/inimioara_donatii.svg'|theme}}">doneaza</a>
 
-        <h2 class="text-center mb-5">Multumim partenerilor strategici</h2>
-
         {% component "sponsors" %}
-        
-        <h2 class="text-center mb-5">Vezi si campaniile din anii precedenti</h2>
 
-        <div class="owl-carousel row">
-            <div class="m-2"><a href="#" class="btn rounded-circle round-container">2008</a></div>
-            <div><a href="#" class="btn rounded-circle round-container">2010</a></div>
-            <div><a href="#" class="btn rounded-circle round-container">2011</a></div>
-            <div><a href="#" class="btn rounded-circle round-container">2012</a></div>
-            <div><a href="#" class="btn rounded-circle round-container">2013</a></div>
-            <div><a href="#" class="btn rounded-circle round-container">2014</a></div>
-        </div>   
+        {% component "years" %}
+        
     </div>
 </div>
