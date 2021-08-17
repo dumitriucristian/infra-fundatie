@@ -3,6 +3,7 @@
 add to .env file APP_KEY=null
 run php artisan key:generate
 key was generated remove "=null" from generated hash
+
 #file_put_contents(c:\composer): failed to open stream: Permission denied  
 clear cache     
 1. ```php artisan cache:clear```    
@@ -28,4 +29,4 @@ delete untracked file and folders - BEWARE NOT RECOVERABLE
 ```
 #some random error 
 -   check for .env file to be present
--   run g``` composer update ```
+-   run  ``` composer update ```
