@@ -1,6 +1,7 @@
 <?php namespace Admin\Campaign\Models;
 
 use Model;
+use Carbon\Carbon;
 
 /**
  * Model
@@ -40,6 +41,70 @@ class Campaign extends Model
     public function getPercentageMoney() :int
     {
         return $this->raised_money*100 / $this->target_money;
+    }
+
+    public function getExpireDateCarbon()
+    {
+        return new Carbon($this->expire_at);
+    }
+
+    public function getMonth() :string
+    {
+        $date = $this->getExpireDateCarbon();
+        switch ($date->month) {
+            case 1:
+                return "Ianuarie";
+                break;
+
+            case 2:
+                return "Februarie";
+                break;
+
+            case 3:
+                return "Martie";
+                break;
+
+            case 4:
+                return "Aprilie";
+                break;
+
+            case 5:
+                return "Mai";
+                break;
+
+            case 6:
+                return "Iunie";
+                break;
+
+            case 7:
+                return "Iulie";
+                break;
+
+            case 8:
+                return "August";
+                break;
+
+            case 9:
+                return "Septembrie";
+                break;
+
+            case 10:
+                return "Octombrie";
+                break;
+
+            case 11:
+                return "Noiembrie";
+                break;
+
+            case 12: 
+                return "Decembrie";
+                break;
+        }
+    }
+
+    public function getExpireDate() :string
+    {
+        return $this->getExpireDateCarbon()->day . " " . $this->getMonth() . " " . $this->getExpireDateCarbon()->year;
     }
 
 }
