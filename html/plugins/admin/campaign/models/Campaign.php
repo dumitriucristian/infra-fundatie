@@ -44,7 +44,14 @@ class Campaign extends Model
     {
         if(self::where('year',$this->year)->where('slug',$this->slug)->first())
             throw new ValidationException(['year' => "Exista deja un an la fel pentru slug-ul selectat"]);
-    }   
+    }
+    
+    public function beforeUpdate()
+    {
+        if(self::where('year',$this->year)->where('slug',$this->slug)->first())
+            if(self::where('year',$this->year)->where('slug',$this->slug)->first()->id != $this->id)
+                throw new ValidationException(['year' => "Exista deja un an la fel pentru slug-ul selectat"]);
+    }
 
     public function getPercentageMoney() :int
     {
