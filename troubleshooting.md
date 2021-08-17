@@ -28,4 +28,4 @@ delete untracked file and folders - BEWARE NOT RECOVERABLE
 ```
 #some random error 
 -   check for .env file to be present
--   run g``` composer update ```
+-   run  ``` composer update ```
