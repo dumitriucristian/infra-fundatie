@@ -5,7 +5,7 @@ chown www-data:www-data storage -R
 #ignore files
 git rm --cached file
 
-#use npm
+#use sass compiler npx
 ##install
 - use terminal, and go to themes/fundatie dir
 - npm install
