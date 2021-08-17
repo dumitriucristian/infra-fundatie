@@ -107,4 +107,9 @@ class Campaign extends Model
         return $this->getExpireDateCarbon()->day . " " . $this->getMonth() . " " . $this->getExpireDateCarbon()->year;
     }
 
+    public function urlToCampaign() :string 
+    {
+        return "campanie/" . $this->slug . "/" . $this->year;
+    }
+
 }

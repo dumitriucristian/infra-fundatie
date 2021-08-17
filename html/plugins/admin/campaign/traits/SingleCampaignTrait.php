@@ -14,52 +14,19 @@ trait SingleCampaignTrait
         return [
             'year' => [
                 'title' => 'Campaign year',
-                'type' => 'dropdown',
-                'placeholder' => 'Select a year',
                 'required' => true,
             ],
-            'campaignType' => [
-                'title' => 'Campaign type',
-                'type' => 'dropdown',
-                'placeholder' => 'Select a campaign type',
+            'slug' => [
+                'title' => 'Campaign slug',
                 'required' => true,
-            ],
-            'name' => [
-                'title' => 'Campaign name',
-                'type' => 'dropdown',
-                'placeholder' => 'Select a campaign name',
-                'required' => true,
-                'depends' => ['year','campaignType'],
             ],
             
         ];
     }
 
-    public function getYearOptions()
+    protected function loadCampaign($year,$slug)
     {
-        $values = Campaign::groupBy('year')->pluck('year')->toArray();
-        return array_combine($values,$values);
-    }
-
-    public function getCampaignTypeOptions()
-    {
-        $valuesName = CampaignType::pluck('name')->toArray();
-        $valuesId = CampaignType::pluck('id')->toArray();
-        return array_combine($valuesId,$valuesName);
-    }
-    
-    public function getNameOptions()
-    {
-        $year = Request::input('year');
-        $campaignType = Request::input('campaignType');
-
-        $values = Campaign::where('year',$year)->where('campaign_type_id',$campaignType)->pluck('name')->toArray();
-        return array_combine($values,$values);
-    }
-
-    protected function loadCampaign($campaign_type_id,$year,$name)
-    {
-        return Campaign::where('campaign_type_id',$campaign_type_id)->where('year',$year)->where('name',$name)->first();
+        return Campaign::where('year',$year)->where('slug',$slug)->first();
     }
     
 }

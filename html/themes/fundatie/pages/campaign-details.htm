@@ -1,16 +1,14 @@
-url = "/campanie"
+url = "/campanie/:slug/:year"
 layout = "detalii-campanie"
 title = "Campanie"
 
 [campaign]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = {{ :year }}
+slug = {{ :slug }}
 
 [sponsors]
-year = 2022
-campaignType = 1
-name = "Campanie"
+year = {{ :year }}
+slug = {{ :slug }}
 ==
 <div class="container d-flex justify-content-center">
 
