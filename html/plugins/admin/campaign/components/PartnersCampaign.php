@@ -1,6 +1,7 @@
 <?php namespace Admin\Campaign\Components;
 
 use Cms\Classes\ComponentBase;
+use Log;
 use Admin\Campaign\Traits\SingleCampaignTrait;
 
 class PartnersCampaign extends ComponentBase
@@ -22,7 +23,10 @@ class PartnersCampaign extends ComponentBase
 
         $campaign = $this->loadCampaign($this->property('year'),$this->property('slug'));
         if(!$campaign)
-            return redirect('404');  
+        {
+            Log::error("Campania din url a fost scrisa gresit");
+            return redirect('404'); 
+        }
         $this->partners = $campaign->partners;
     }
     

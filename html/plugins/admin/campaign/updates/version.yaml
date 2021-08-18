@@ -30,3 +30,6 @@
 1.0.11:
     - 'Updated table admin_campaign_partners'
     - builder_table_update_admin_campaign_partners.php
+1.0.12:
+    - 'Updated table admin_campaign_'
+    - builder_table_update_admin_campaign__3.php

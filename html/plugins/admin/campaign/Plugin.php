@@ -13,6 +13,7 @@ class Plugin extends PluginBase
             'Admin\Campaign\Components\Years' => 'years',
             'Admin\Campaign\Components\Partners' => 'partners',
             'Admin\Campaign\Components\PartnersCampaign' => 'partnersCampaign',
+            'Admin\Campaign\Components\CampaignsHomepage' => 'campaignsHomepage',
         ];
     }
 
