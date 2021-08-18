@@ -27,3 +27,6 @@
 1.0.10:
     - 'Updated table admin_campaign_partners_campaign'
     - builder_table_update_admin_campaign_partners_campaigns.php
+1.0.11:
+    - 'Updated table admin_campaign_partners'
+    - builder_table_update_admin_campaign_partners.php

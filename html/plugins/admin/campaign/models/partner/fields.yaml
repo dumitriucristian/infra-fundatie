@@ -14,3 +14,8 @@ fields:
         span: auto
         required: 1
         type: fileupload
+    description:
+        label: Description
+        size: ''
+        span: full
+        type: richeditor
