@@ -107,3 +107,9 @@ fields:
         span: auto
         required: 1
         type: richeditor
+    partners:
+        label: Partners
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation

@@ -13,6 +13,10 @@ slug = "{{ :slug }}"
 [years]
 year = "{{ :year }}"
 slug = "{{ :slug }}"
+
+[partners]
+year = "{{ :year }}"
+slug = "{{ :slug }}"
 ==
 <div class="container d-flex justify-content-center">
 
@@ -24,7 +28,7 @@ slug = "{{ :slug }}"
         <a class="long-btn text-center mt-2 mb-2" href="#"><img  class="me-2" src="{{'assets/images/inimioara_donatii.svg'|theme}}">doneaza</a>
 
         {% component "sponsors" %}
-
+        {% component 'partners' %}
         {% component "years" %}
         
     </div>
