@@ -3,6 +3,7 @@
 use Cms\Classes\ComponentBase;
 use Request;
 use Admin\Campaign\Traits\SingleCampaignTrait;
+use Log;
 
 class SingleCampaign extends ComponentBase
 {
@@ -22,7 +23,10 @@ class SingleCampaign extends ComponentBase
     {
         $this->campaign = $this->loadCampaign($this->property('year'),$this->property('slug'));
         if(!$this->campaign)
+        {
+            Log::error("Campania din url a fost scrisa gresit");
             return redirect('404');  
+        }
     }
     
 }

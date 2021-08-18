@@ -4,6 +4,7 @@ use Cms\Classes\ComponentBase;
 use Request;
 use Admin\Campaign\Traits\SingleCampaignTrait;
 use Admin\Campaign\Models\Campaign;
+use Log;
 
 class Years extends ComponentBase
 {
@@ -23,7 +24,10 @@ class Years extends ComponentBase
     {
         $campaign = $this->loadCampaign($this->property('year'),$this->property('slug'));
         if(!$campaign)
+        {
+            Log::error("Campania din url a fost scrisa gresit");
             return redirect('404');  
+        }
         $this->campaigns = Campaign::where('campaign_type_id',$campaign->campaign_type_id)->where('year','!=',$campaign->year)->get();
     }
     
