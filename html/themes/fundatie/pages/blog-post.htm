@@ -33,39 +33,38 @@ photosOnPage = 12
     </div>
 </div>
 <div class="container">
-        <div class="row">
-        <div class="col-1">
+    <div class="row">
+        <div class="col-xs-12 col-lg-1">
             {% partial 'social-media' %}
-           
         </div>
-    
-        <div class="col-9">
-            <p class="article-date">{{ post.published_at|date('d M Y') }}  {{ post.user.first_name }} {{ post.user.last_name }}       
-            <div class="content article">{{ post.content_html|raw }}</div>
-            
-            {% if post.featured_images.count %}
-                <div class="featured-images text-center">
-                    {% for image in post.featured_images %}
-                        <p>
-                            <img
-                                data-src="{{ image.filename }}"
-                                src="{{ image.path }}"
-                                alt="{{ image.description }}"
-                                style="max-width: 100%" />
-                        </p>
-                    {% endfor %}
-                </div>
+
+    <div class="col-xs-12 col-lg-9">
+        <p class="article-date">{{ post.published_at|date('d M Y') }}  {{ post.user.first_name }} {{ post.user.last_name }}       
+        <div class="content article">{{ post.content_html|raw }}</div>
+        
+        {% if post.featured_images.count %}
+            <div class="featured-images text-center">
+                {% for image in post.featured_images %}
+                    <p>
+                        <img
+                            data-src="{{ image.filename }}"
+                            src="{{ image.path }}"
+                            alt="{{ image.description }}"
+                            style="max-width: 100%" />
+                    </p>
+                {% endfor %}
+            </div>
+        {% endif %}
+        
+        <p class="info">
+            Posted
+            {% if post.categories.count %} in
+                {% for category in post.categories %}
+                    <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
             {% endif %}
-            
-            <p class="info">
-                Posted
-                {% if post.categories.count %} in
-                    {% for category in post.categories %}
-                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-                    {% endfor %}
-                {% endif %}
-            </p>
-        </div>
+        </p>
+    </div>
     </div>
    <!-- <div class="container-flex d-flex flex-column justify-content-center">
         <div class="owl-carousel">

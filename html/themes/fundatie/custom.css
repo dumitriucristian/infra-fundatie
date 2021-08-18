@@ -11284,6 +11284,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -11291,12 +11296,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -11351,6 +11357,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -11400,6 +11407,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6f42c1;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -11465,6 +11473,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -11472,12 +11485,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -11532,6 +11546,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -11581,6 +11596,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -11616,6 +11632,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -11623,12 +11644,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -11683,6 +11705,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -11732,6 +11755,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -11798,6 +11822,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -11805,12 +11834,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -11865,6 +11895,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -11914,6 +11945,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -11973,6 +12005,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -11980,12 +12017,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -12040,6 +12078,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -12089,6 +12128,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -12216,6 +12256,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -12223,12 +12268,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -12283,6 +12329,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -12332,6 +12379,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -12374,6 +12422,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -12381,12 +12434,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -12441,6 +12495,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -12490,6 +12545,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
@@ -12553,6 +12609,11 @@ ghilimele
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.owl-stage {
+  margin: 0 auto;
+  text-align: center;
+}
+
 .article-header {
   position: relative;
   width: 100%;
@@ -12560,12 +12621,13 @@ ghilimele
 .article-header a.logo {
   position: absolute;
   margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  padding: 1em;
+  width: 135px;
+  height: 135px;
+  padding: 0.7em;
   z-index: 25;
   display: block;
   border-radius: 50%;
+  top: -59px;
 }
 
 .header-gallery .bottom-header-shadow {
@@ -12620,6 +12682,7 @@ iframe {
   color: #80808085;
   font-family: "galano-semi-bold";
   font-size: 1.2em;
+  text-align: center;
 }
 
 blockquote {
@@ -12669,6 +12732,7 @@ body {
 h1, .h1, h2, .h2, h3, .h3, h3 {
   font-family: galano-black;
   color: #6255a4;
+  text-align: center;
 }
 
 .btn-doneaza {
