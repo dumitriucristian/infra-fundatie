@@ -22,3 +22,7 @@ navigation:
                 label: Sponsor
                 url: admin/campaign/sponsors
                 icon: icon-money
+            Partner:
+                label: Partner
+                url: admin/campaign/partners
+                icon: icon-smile-o

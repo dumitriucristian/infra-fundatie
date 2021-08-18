@@ -1,0 +1,4 @@
+title: Partners
+modelClass: Admin\Campaign\Models\Partner
+toolbar:
+    buttons: reorder_toolbar

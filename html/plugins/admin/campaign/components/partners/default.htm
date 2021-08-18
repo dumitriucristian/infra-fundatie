@@ -1,0 +1,14 @@
+{% set partners = __SELF__.partners %}
+
+{% if partners.first() != null %}
+    <h2 class="text-center mb-5">Multumim partenerilor strategici</h2>
+    <div class="owl-carousel">
+        {% for partner in partners %}
+            <div class="oval">
+                <a class="btn col-2" href="#">
+                    <img src="{{ partner.picture.thumb(400,auto) }}">
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+{% endif %}
