@@ -12,7 +12,8 @@
         "rainlab/pages-plugin": "^1.4",
         "rainlab/builder-plugin": "^1.0",
         "rainlab/blog-plugin": "^1.5",
-        "anandpatel/wysiwygeditors-plugin": "^1.2"
+        "anandpatel/wysiwygeditors-plugin": "^1.2",
+        "graker/photoalbums-plugin": "^1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0|^9.0",

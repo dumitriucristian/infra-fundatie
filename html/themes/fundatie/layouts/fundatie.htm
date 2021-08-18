@@ -4,8 +4,7 @@ default = 0
 ==
 <!DOCTYPE html>
 <html>
-     <head>
-    
+     <head>    
       {% partial 'meta' %}
       {% partial 'styles' %}
     </head>
@@ -16,5 +15,21 @@ default = 0
         {% page %}
         {% partial 'footer' %}
         {% partial 'scripts' %}
+        <script>
+          $(document).ready(function(){
+           $(".owl-carousel").owlCarousel({
+             stagePadding:0,
+             loop:true,
+             responsive : {
+               0 : {
+                 items:1
+               },
+               480 : {
+                 items: 1
+              } ,
+            }
+          })
+        });
+      </script>
   </body>
 </html>
