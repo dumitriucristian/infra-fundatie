@@ -1,13 +1,17 @@
+[staticPage]
+useContent = 1
+default = 0
+==
 <!DOCTYPE html>
 <html>
-     <head>
+     <head>    
       {% partial 'meta' %}
       {% partial 'styles' %}
     </head>
     {% partial 'header' %}
     {% partial 'navigation' %}
     <body class="bg-light">
-        {% partial 'header-section' %}
+      
         {% page %}
         {% partial 'footer' %}
         {% partial 'scripts' %}
@@ -15,18 +19,17 @@
           $(document).ready(function(){
            $(".owl-carousel").owlCarousel({
              stagePadding:0,
-             loop:false,
+             loop:true,
              responsive : {
                0 : {
                  items:1
                },
                480 : {
-                 items: 3
-               },
-
-             }
-           });
-          });
+                 items: 1
+              } ,
+            }
+          })
+        });
       </script>
   </body>
 </html>
