@@ -1,4 +1,7 @@
-
+/* MISSING 
+icon twitter
+ghilimele
+*/
 //fonts
 $font-path: "/themes/fundatie/assets/fonts";
 
@@ -22,6 +25,82 @@ $font-path: "/themes/fundatie/assets/fonts";
 }
 
 
+.article{
+    img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 2em;
+        max-height: 400px;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        max-width:100%;
+    }
+    p{
+        text-align: justify;
+    }
+}
+
+iframe{
+    color: #80808085;
+    font-family: "galano-semi-bold";
+    font-size: 1.2em;
+    border-radius: 2em;
+    margin:0 auto;
+    text-align: center;
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    max-width:100%;
+}
+
+.article-date{
+    color: #80808085;
+    font-family: "galano-semi-bold";
+    font-size: 1.2em;
+}
+
+blockquote{
+    background-color: white;
+    border-radius: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-style: italic;
+    padding: 1em;
+    box-shadow: #0e00802b 0px 0px 20px;
+    display: block;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  
+    p{
+        margin:0;
+        padding:0;
+        text-align: center !important;
+    }
+    .author{
+        color:$purple;
+        font-weight: bold;
+        font-size: 0.7em;
+        font-family: 'galano-black';
+    }
+}
+
+blockquote::before{
+    font-family: "galano-black"; 
+    font-weight: 900; 
+    content: '"';
+    color:$purple;
+    font-size:1em;
+}
+
+.social-media-btn{
+    width: 75px;
+    height: 75px;
+    display: block;
+}
+
+
 
 body {
     font-family:galano-light;
@@ -42,6 +121,7 @@ $pink:#dc4199;
     background-color: $pink;
     color:white;
     font-weight:bold;
+
 }
 
 a {

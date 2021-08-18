@@ -11268,6 +11268,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11280,6 +11284,78 @@ textarea.form-control-lg {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6f42c1;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6f42c1;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11336,6 +11412,10 @@ a {
   box-shadow: none;
 }
 
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11348,6 +11428,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11374,6 +11526,10 @@ a {
   padding: 2px;
 }
 
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11386,6 +11542,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11443,6 +11671,10 @@ a {
   top: -70px;
 }
 
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11455,6 +11687,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11503,6 +11807,114 @@ a {
   height: 25px;
   background-image: url("/themes/fundatie/assets/images/shape_despartitor_header.svg");
   background-position: center;
+}
+
+/* MISSING 
+icon twitter
+ghilimele
+*/
+@font-face {
+  src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
+  font-family: "galano-black";
+}
+@font-face {
+  src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Semi-Bold_0.otf");
+  font-family: "galano-semi-bold";
+}
+@font-face {
+  src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
+  font-family: "galano-light";
+}
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
+body {
+  font-family: galano-light;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h3 {
+  font-family: galano-black;
+  color: #6255a4;
+}
+
+.btn-doneaza {
+  background-color: #dc4199;
+  color: white;
+  font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+  color: #dc4199;
 }
 
 .img-wrapper {
@@ -11603,6 +12015,10 @@ a {
     border-radius: 0 0 4em 4em;
   }
 }
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11615,6 +12031,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11648,6 +12136,10 @@ a {
   margin: 1em;
 }
 
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11660,6 +12152,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
@@ -11714,6 +12278,10 @@ a {
     top: -9px;
   }
 }
+/* MISSING 
+icon twitter
+ghilimele
+*/
 @font-face {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Black_0.otf");
   font-family: "galano-black";
@@ -11726,6 +12294,78 @@ a {
   src: url("/themes/fundatie/assets/fonts/Galano-Grotesque-Light_0.otf");
   font-family: "galano-light";
 }
+.article img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 2em;
+  max-height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  max-width: 100%;
+}
+.article p {
+  text-align: justify;
+}
+
+iframe {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+  border-radius: 2em;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  max-width: 100%;
+}
+
+.article-date {
+  color: #80808085;
+  font-family: "galano-semi-bold";
+  font-size: 1.2em;
+}
+
+blockquote {
+  background-color: white;
+  border-radius: 1em;
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  padding: 1em;
+  box-shadow: #0e00802b 0px 0px 20px;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+blockquote p {
+  margin: 0;
+  padding: 0;
+  text-align: center !important;
+}
+blockquote .author {
+  color: #6255a4;
+  font-weight: bold;
+  font-size: 0.7em;
+  font-family: "galano-black";
+}
+
+blockquote::before {
+  font-family: "galano-black";
+  font-weight: 900;
+  content: '"';
+  color: #6255a4;
+  font-size: 1em;
+}
+
+.social-media-btn {
+  width: 75px;
+  height: 75px;
+  display: block;
+}
+
 body {
   font-family: galano-light;
 }
