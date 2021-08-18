@@ -1,9 +1,46 @@
 url = "/:category/:slug"
 layout = "fundatie"
-title = "blog"
+title = "blog-post"
 
 [blogPost]
 slug = "{{ :slug }}"
-categoryPage = "blog/category"
+categoryPage = "articol"
 ==
-{% component 'blogPost' %}
+{% set post = blogPost.post %}
+<div class="container d-flex justify-content-center">
+
+    <div class="row">
+        <div class="col-xs-12 col-md-1">
+            {% partial 'social-media' %}
+           
+        </div>
+        <div class="col-xs-12 col-md-9">
+            <p class="article-date">{{ post.published_at|date('d M Y') }}  {{ post.user.first_name }} {{ post.user.last_name }}       
+            <div class="content article">{{ post.content_html|raw }}</div>
+            
+            {% if post.featured_images.count %}
+                <div class="featured-images text-center">
+                    {% for image in post.featured_images %}
+                        <p>
+                            <img
+                                data-src="{{ image.filename }}"
+                                src="{{ image.path }}"
+                                alt="{{ image.description }}"
+                                style="max-width: 100%" />
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            <p class="info">
+                Posted
+                {% if post.categories.count %} in
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </p>
+        </div>
+    </div>
+    
+</div>
