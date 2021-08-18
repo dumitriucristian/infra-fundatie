@@ -1,0 +1,44 @@
+{% set campaigns = __SELF__.campaigns %}
+
+<div class="container mt-5 mb-5">
+    {% for campaign in campaigns %}
+        <div class="container campaign mt-4 mb-4">
+            <div class="row">
+                <div class="img-wrapper  col-lg-6  col-12 m-0 p-0">
+                    <img src="{{ campaign.picture.thumb(600,auto)}}" >
+                </div>
+
+                <div class="col-lg-6 col-12 m-0 p-0">
+                    <div class="campaign-details p-3">
+                        <p class="date text-center mt-md-2">{{  campaign.getExpireDate() }}</p>
+                        <p class="title text-center mt-md-4 mb-md-5 ">{{ campaign.name }}</p>
+                        <div class="progressbar mt-5">
+                        <div class="main-layer">
+                            <div class="done-layer" style="width:{{ campaign.getPercentageMoney() }}%;">
+                                <span>some</span>
+                            </div>
+                        </div>
+                        <p class="percent text-center">{{ campaign.getPercentageMoney() }}%</p>
+                    </div>
+                    <div class="details row">
+                        <div class="amount border-right col-6">
+                            <p class="small-text">Suma stransa</p>
+                            <p class="big-text">{{campaign.raised_money}} ron</p>
+                        </div>
+                        <div class="amount col-6">
+                            <p class="small-text text-end">Target</p>
+                            <p class="big-text text-end">{{campaign.target_money}} ron</p>
+                        </div>
+                    </div>
+                        <div class="details mt-2 mt-md-4">
+                            <p class="text-center">
+                                <a href="{{ campaign.urlToCampaign() }}" class="detail-btn btn rounded-pill" >detalii</a>
+                                <a href="#" class=""><img class="" src="{{'/assets/images/doneaza_btn.svg'|theme}}" width="40"></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
