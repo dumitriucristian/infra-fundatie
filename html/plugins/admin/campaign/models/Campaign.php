@@ -1,7 +1,9 @@
 <?php namespace Admin\Campaign\Models;
 
 use Model;
+use Validator;
 use Carbon\Carbon;
+use October\Rain\Exception\ValidationException;
 
 /**
  * Model
@@ -37,6 +39,19 @@ class Campaign extends Model
             'order' => 'name',
         ],
     ];
+
+    public function beforeCreate()
+    {
+        if(self::where('year',$this->year)->where('slug',$this->slug)->first())
+            throw new ValidationException(['year' => "Exista deja un an la fel pentru slug-ul selectat"]);
+    }
+    
+    public function beforeUpdate()
+    {
+        if(self::where('year',$this->year)->where('slug',$this->slug)->first())
+            if(self::where('year',$this->year)->where('slug',$this->slug)->first()->id != $this->id)
+                throw new ValidationException(['year' => "Exista deja un an la fel pentru slug-ul selectat"]);
+    }
 
     public function getPercentageMoney() :int
     {

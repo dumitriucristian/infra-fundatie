@@ -22,6 +22,8 @@ class Sponsors extends ComponentBase
     public function onRun()
     {
         $this->campaign = $this->loadCampaign($this->property('year'),$this->property('slug'));
+        if(!$this->campaign)
+            return redirect('404');  
         $this->sponsors = $this->campaign->sponsors;
     }
     
