@@ -1,0 +1,10 @@
+name: Partners
+form: $/admin/campaign/models/partner/fields.yaml
+modelClass: Admin\Campaign\Models\Partner
+defaultRedirect: admin/campaign/partners
+create:
+    redirect: 'admin/campaign/partners/update/:id'
+    redirectClose: admin/campaign/partners
+update:
+    redirect: admin/campaign/partners
+    redirectClose: admin/campaign/partners

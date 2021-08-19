@@ -38,6 +38,11 @@ class Campaign extends Model
             'table' => 'admin_campaign_sponsors_campaigns',
             'order' => 'name',
         ],
+        'partners' => [
+            'Admin\Campaign\Models\Partner',
+            'table' => 'admin_campaign_partners_campaigns',
+            'order' => 'name',
+        ],
     ];
 
     public function beforeCreate()

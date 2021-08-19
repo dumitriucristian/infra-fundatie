@@ -18,3 +18,18 @@
 1.0.7:
     - 'Updated table admin_campaign_'
     - builder_table_update_admin_campaign__2.php
+1.0.8:
+    - 'Created table admin_campaign_partners'
+    - builder_table_create_admin_campaign_partners.php
+1.0.9:
+    - 'Created table admin_campaign_partners_campaign'
+    - builder_table_create_admin_campaign_partners_campaign.php
+1.0.10:
+    - 'Updated table admin_campaign_partners_campaign'
+    - builder_table_update_admin_campaign_partners_campaigns.php
+1.0.11:
+    - 'Updated table admin_campaign_partners'
+    - builder_table_update_admin_campaign_partners.php
+1.0.12:
+    - 'Updated table admin_campaign_'
+    - builder_table_update_admin_campaign__3.php
