@@ -30,6 +30,21 @@ default = 0
             }
           })
         });
+
+        $(document).ready(function(){
+           $(".owl-trhree").owlCarousel({
+             stagePadding:0,
+             loop:true,
+             responsive : {
+               0 : {
+                 items:1
+               },
+               480 : {
+                 items: 3
+              } ,
+            }
+          })
+        });
       </script>
   </body>
 </html>
