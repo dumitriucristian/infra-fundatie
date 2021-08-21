@@ -1,0 +1,49 @@
+[staticPage]
+useContent = 1
+default = 0
+==
+<!DOCTYPE html>
+<html>
+     <head>    
+      {% partial 'meta' %}
+      {% partial 'styles' %}
+    </head>
+   
+    <body>
+        {% partial 'header-home' %}
+        {% page %}
+        {% partial 'footer' %}
+        {% partial 'scripts' %}
+        <script>
+          $(document).ready(function(){
+           $(".owl-carousel").owlCarousel({
+             stagePadding:0,
+             loop:true,
+             responsive : {
+               0 : {
+                 items:1
+               },
+               480 : {
+                 items: 1
+              } ,
+            }
+          })
+        });
+
+        $(document).ready(function(){
+           $(".owl-trhree").owlCarousel({
+             stagePadding:0,
+             loop:true,
+             responsive : {
+               0 : {
+                 items:1
+               },
+               480 : {
+                 items: 3
+              } ,
+            }
+          })
+        });
+      </script>
+  </body>
+</html>

@@ -11421,6 +11421,11 @@ a {
   color: #dc4199;
 }
 
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
@@ -11455,6 +11460,10 @@ a {
   text-decoration: none;
   outline: 0;
   box-shadow: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
 
 /* MISSING 
@@ -11608,6 +11617,11 @@ h1, .h1, h2, .h2, h3, .h3, h3 {
 a {
   font-weight: bold;
   color: #dc4199;
+}
+
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
 }
 
 .top-bar {
@@ -11769,6 +11783,11 @@ a {
   color: #dc4199;
 }
 
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
+}
+
 .content-banner {
   background-color: skyblue;
   height: 345px;
@@ -11778,6 +11797,19 @@ a {
   position: relative;
 }
 .content-banner h1, .content-banner .h1 {
+  font-family: Galano-black;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.content-banner-home {
+  height: 500px;
+  color: #6255a4;
+  background-image: url(/themes/fundatie/assets/images/bg-desktop-hp.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.content-banner-home h1, .content-banner-home .h1 {
   font-family: Galano-black;
   font-size: 2.5em;
   font-weight: bold;
@@ -11804,6 +11836,14 @@ a {
   width: 150px;
   background-color: white;
   top: -70px;
+}
+
+.logo-home {
+  background-color: transparent;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  top: -50px;
 }
 
 /* MISSING 
@@ -11957,6 +11997,11 @@ h1, .h1, h2, .h2, h3, .h3, h3 {
 a {
   font-weight: bold;
   color: #dc4199;
+}
+
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
 }
 
 .bottom-footer {
@@ -12140,6 +12185,11 @@ h1, .h1, h2, .h2, h3, .h3, h3 {
 a {
   font-weight: bold;
   color: #dc4199;
+}
+
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
 }
 
 .img-wrapper {
@@ -12393,6 +12443,11 @@ a {
   color: #dc4199;
 }
 
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
+}
+
 .round-container {
   background-color: white;
   height: 8em;
@@ -12557,6 +12612,11 @@ h1, .h1, h2, .h2, h3, .h3, h3 {
 a {
   font-weight: bold;
   color: #dc4199;
+}
+
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
 }
 
 .oval a {
@@ -12744,6 +12804,11 @@ h1, .h1, h2, .h2, h3, .h3, h3 {
 a {
   font-weight: bold;
   color: #dc4199;
+}
+
+.content-campaign p img {
+  width: 100%;
+  border-radius: 2em;
 }
 
 .long-btn {
