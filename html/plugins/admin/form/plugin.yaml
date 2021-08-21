@@ -1,0 +1,11 @@
+plugin:
+    name: 'admin.form::lang.plugin.name'
+    description: 'admin.form::lang.plugin.description'
+    author: Admin
+    icon: oc-icon-asterisk
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Clients
+        url: admin/form/clients
+        icon: icon-life-ring

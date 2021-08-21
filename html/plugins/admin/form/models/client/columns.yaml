@@ -1,0 +1,28 @@
+columns:
+    firstname:
+        label: 'First Name'
+        type: text
+        searchable: true
+        sortable: true
+    lastname:
+        label: 'Last Name'
+        type: text
+        searchable: true
+        sortable: true
+    email:
+        label: Email
+        type: text
+        searchable: true
+        sortable: true
+    phone_number:
+        label: 'Phone Number'
+        type: text
+        searchable: true
+    county:
+        label: Judet
+        type: text
+        searchable: true
+    city:
+        label: Localitate
+        type: text
+        searchable: true
