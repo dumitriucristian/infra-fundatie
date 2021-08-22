@@ -129,7 +129,7 @@ class Campaign extends Model
 
     public function urlToCampaign() :string 
     {
-        return "campanie/" . $this->slug . "/" . $this->year;
+        return "/campanie/" . $this->slug . "/" . $this->year;
     }
 
 }

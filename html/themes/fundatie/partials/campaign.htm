@@ -1,11 +1,21 @@
-{% set campaign = __SELF__.campaign %}
 <div class="progressbar mt-5">
     <div class="main-layer">
-        <div class="done-layer" style="width:{{ campaign.getPercentageMoney() }}%;">
+        <div class="done-layer" style="border-radius:2em; width:
+        {% if campaign.finalized == false %}
+            {{ campaign.getPercentageMoney() }}%;
+        {% else %}
+            100%;
+        {% endif %}">
             <span>some</span>
         </div>
     </div>
-    <p class="percent text-center">{{ campaign.getPercentageMoney() }}%</p>
+    <p class="percent text-center">
+    {% if campaign.finalized == false %}
+        {{ campaign.getPercentageMoney() }}
+    {% else %}
+        Finalizat
+    {% endif %}
+    </p>
 </div>
 <div class="details row">
     <div class="amount border-right col-6">
@@ -16,7 +26,4 @@
         <p class="small-text text-end">Target</p>
         <p class="big-text text-end">{{campaign.target_money}} ron</p>
     </div>
-</div>
-<div class="content-campaign">
-{% partial "campaign" campaign=campaign %}
 </div>
