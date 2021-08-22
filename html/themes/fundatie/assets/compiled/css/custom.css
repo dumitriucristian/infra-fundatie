@@ -12034,6 +12034,42 @@ a {
   background-position: center;
 }
 
+.excerpt span {
+  background-color: purple;
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  padding: 5px 5px;
+  font-weight: bold;
+  position: relative;
+  top: 35px;
+  left: -35px;
+}
+.excerpt img {
+  border-radius: 50%;
+  width: 125px !important;
+  height: 125px !important;
+}
+.excerpt a {
+  background-color: #ffe600;
+}
+
+.excerpt-text {
+  text-align: center;
+  font-size: 0.7em;
+  width: 125px;
+  height: 56px;
+  overflow: hidden;
+  padding: 0;
+  display: block;
+  margin: 10px;
+  line-height: 1;
+}
+
 /* MISSING 
 icon twitter
 ghilimele

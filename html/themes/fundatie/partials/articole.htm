@@ -1,17 +1,11 @@
-url = "/blog"
-layout = "fundatie"
-title = "blog"
-
 [blogPosts]
 pageNumber = "{{ :page }}"
 postsPerPage = 10
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
-categoryPage = "blog-post"
-postPage = "blog-post"
+categoryPage = 404
+postPage = blog
 ==
-{% set posts = blogPosts.posts %}
-
 <div class="container">
     <div class="row">
         <div class="owl-carousel owl-five">
@@ -32,20 +26,3 @@ postPage = "blog-post"
 </div>
     
 
-{% if posts.lastPage > 1 %}
-    <ul class="pagination">
-        {% if posts.currentPage > 1 %}
-            <li><a href="{{ this.page.baseFileName|page({ (blogPosts.pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
-        {% endif %}
-
-        {% for page in 1..posts.lastPage %}
-            <li class="{{ posts.currentPage == page ? 'active' : null }}">
-                <a href="{{ this.page.baseFileName|page({ (blogPosts.pageParam): page }) }}">{{ page }}</a>
-            </li>
-        {% endfor %}
-
-        {% if posts.lastPage > posts.currentPage %}
-            <li><a href="{{ this.page.baseFileName|page({ (blogPosts.pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
-        {% endif %}
-    </ul>
-{% endif %}
