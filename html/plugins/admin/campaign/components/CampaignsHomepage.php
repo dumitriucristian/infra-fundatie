@@ -3,7 +3,7 @@
 use Cms\Classes\ComponentBase;
 use Admin\Campaign\Models\Campaign;
 
-class CampaignsHomepage extends ComponentBase
+class Campaignshomepage extends ComponentBase
 {
     public $campaigns;
 

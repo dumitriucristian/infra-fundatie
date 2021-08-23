@@ -4,7 +4,7 @@ use Cms\Classes\ComponentBase;
 use Log;
 use Admin\Campaign\Traits\SingleCampaignTrait;
 
-class PartnersCampaign extends ComponentBase
+class Partnerscampaign extends ComponentBase
 {
     use SingleCampaignTrait;
 
