@@ -50,7 +50,7 @@ class ServiceProvider extends ModuleServiceProvider
     {
         parent::boot('backend');
 
-        $this->bootAuth();
+       // $this->bootAuth();
     }
 
     /**
