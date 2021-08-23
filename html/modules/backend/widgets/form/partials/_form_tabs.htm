@@ -13,9 +13,9 @@
 ?>
 <div class="<?= $navCss ?>">
     <ul class="nav nav-tabs"  <?= $tabs->linkable ? 'data-linkable' : '' ?>>
-        <?php $index = 0; foreach ($tabs as $name => $fields): ?>
+        <?php $index = 0; foreach ($tabs as $name => $fields): $index++ ?>
         <?php
-            $isActive = $index++ === 0;
+            $isActive = $tabs->isPaneActive($index, $name);
             $isLazy = !$isActive && $tabs->isLazy($name);
         ?>
             <li class="<?= $isActive ? 'active' : '' ?> <?= $isLazy ? 'tab-lazy' : '' ?>">
@@ -38,9 +38,9 @@
 </div>
 
 <div class="tab-content <?= $contentCss ?>">
-    <?php $index = 0; foreach ($tabs as $name => $fields): ?>
+    <?php $index = 0; foreach ($tabs as $name => $fields): $index++ ?>
         <?php
-            $isActive = $index++ === 0;
+            $isActive = $tabs->isPaneActive($index, $name);
             $isLazy = !$isActive && $tabs->isLazy($name);
         ?>
             <div

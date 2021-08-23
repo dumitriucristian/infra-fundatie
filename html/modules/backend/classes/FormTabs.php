@@ -35,6 +35,11 @@ class FormTabs implements IteratorAggregate
     public $defaultTab = 'backend::lang.form.undefined_tab';
 
     /**
+     * @var string activeTab is the selected tab when the form first loads, name or index.
+     */
+    public $activeTab;
+
+    /**
      * @var array icons lists of icons for their corresponding tabs
      */
     public $icons = [];
@@ -98,6 +103,10 @@ class FormTabs implements IteratorAggregate
     {
         if (array_key_exists('defaultTab', $config)) {
             $this->defaultTab = $config['defaultTab'];
+        }
+
+        if (array_key_exists('activeTab', $config)) {
+            $this->activeTab = $config['activeTab'];
         }
 
         if (array_key_exists('icons', $config)) {
@@ -225,6 +234,26 @@ class FormTabs implements IteratorAggregate
         if ($label !== null && isset($this->paneCssClass[$label])) {
             return $this->paneCssClass[$label];
         }
+    }
+
+    /**
+     * isPaneActive returns a tab pane CSS class
+     */
+    public function isPaneActive($index = null, $label = null): bool
+    {
+        if ($this->activeTab === null) {
+            return $index === 1;
+        }
+
+        if ($index !== null && $this->activeTab === $index) {
+            return true;
+        }
+
+        if ($label !== null && $this->activeTab === $label) {
+            return true;
+        }
+
+        return false;
     }
 
     /**

@@ -166,10 +166,10 @@ class ListController extends ControllerBehavior
          */
         $structureConfig = $this->makeListStructureConfig($widgetConfig, $listConfig);
         if ($structureConfig) {
-            $widget = $this->makeWidget('Backend\Widgets\ListStructure', $structureConfig);
+            $widget = $this->makeWidget(\Backend\Widgets\ListStructure::class, $structureConfig);
         }
         else {
-            $widget = $this->makeWidget('Backend\Widgets\Lists', $widgetConfig);
+            $widget = $this->makeWidget(\Backend\Widgets\Lists::class, $widgetConfig);
         }
 
         $widget->bindEvent('list.extendColumns', function () use ($widget) {
@@ -212,7 +212,7 @@ class ListController extends ControllerBehavior
         if (isset($listConfig->toolbar)) {
             $toolbarConfig = $this->makeConfig($listConfig->toolbar);
             $toolbarConfig->alias = $widget->alias . 'Toolbar';
-            $toolbarWidget = $this->makeWidget('Backend\Widgets\Toolbar', $toolbarConfig);
+            $toolbarWidget = $this->makeWidget(\Backend\Widgets\Toolbar::class, $toolbarConfig);
             $toolbarWidget->bindToController();
             $toolbarWidget->cssClasses[] = 'list-header';
 
@@ -225,6 +225,10 @@ class ListController extends ControllerBehavior
                     return $widget->onRefresh();
                 });
 
+                // Linkage for JS plugins
+                $searchWidget->listWidgetId = $widget->getId();
+
+                // Pass search options
                 $widget->setSearchOptions([
                     'mode' => $searchWidget->mode,
                     'scope' => $searchWidget->scope,
@@ -245,7 +249,7 @@ class ListController extends ControllerBehavior
 
             $filterConfig = $this->makeConfig($listConfig->filter);
             $filterConfig->alias = $widget->alias . 'Filter';
-            $filterWidget = $this->makeWidget('Backend\Widgets\Filter', $filterConfig);
+            $filterWidget = $this->makeWidget(\Backend\Widgets\Filter::class, $filterConfig);
             $filterWidget->bindToController();
 
             /*
