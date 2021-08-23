@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table admin_form_client'
+    - builder_table_create_admin_form_client.php
+1.0.3:
+    - 'Updated table admin_form_client'
+    - builder_table_update_admin_form_client.php
+1.0.4:
+    - 'Updated table admin_form_client'
+    - builder_table_update_admin_form_client_2.php
