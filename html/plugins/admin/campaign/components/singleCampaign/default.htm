@@ -1,4 +1,22 @@
 {% set campaign = __SELF__.campaign %}
-
+<div class="progressbar mt-5">
+    <div class="main-layer">
+        <div class="done-layer" style="width:{{ campaign.getPercentageMoney() }}%;">
+            <span>some</span>
+        </div>
+    </div>
+    <p class="percent text-center">{{ campaign.getPercentageMoney() }}%</p>
+</div>
+<div class="details row">
+    <div class="amount border-right col-6">
+        <p class="small-text">Suma stransa</p>
+        <p class="big-text">{{campaign.raised_money}} ron</p>
+    </div>
+    <div class="amount col-6">
+        <p class="small-text text-end">Target</p>
+        <p class="big-text text-end">{{campaign.target_money}} ron</p>
+    </div>
+</div>
+<div class="content-campaign">
 {% partial "campaign" campaign=campaign %}
-{{ campaign.description|raw }}
+</div>

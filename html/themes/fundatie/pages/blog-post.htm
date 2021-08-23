@@ -13,6 +13,14 @@ thumbMode = "auto"
 thumbWidth = 1200
 thumbHeight = 480
 photosOnPage = 12
+
+[photoAlbum photoAlbum2]
+slug = "zurlandia"
+photoPage = 404
+thumbMode = "auto"
+thumbWidth = 640
+thumbHeight = 480
+photosOnPage = 12
 ==
 {% set post = blogPost.post %}
 {% set album = photoAlbum.album %}
@@ -25,7 +33,7 @@ photosOnPage = 12
             <a class="logo" href="#"><img src="{{'/assets/images/logo_fundatia_zurli.svg'|theme}}" ></a>
         </div>
            
-        <div class="owl-carousel">
+        <div class="owl-carousel owl-one">
             {% for photo in album.photos %} 
                 <div><img src="{{ photo.thumb }}"></div>
             {% endfor%}
@@ -33,46 +41,55 @@ photosOnPage = 12
         <div class="bottom-header-shadow"></div>
     </div>
 </div>
+
+
+
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-lg-1">
             {% partial 'social-media' %}
         </div>
 
-    <div class="col-xs-12 col-lg-9">
-        <p class="article-date">{{ post.published_at|date('d M Y') }}  {{ post.user.first_name }} {{ post.user.last_name }}       
-        <div class="content article">{{ post.content_html|raw }}</div>
-        
-        {% if post.featured_images.count %}
-            <div class="featured-images text-center">
-                {% for image in post.featured_images %}
-                    <p>
-                        <img
-                            data-src="{{ image.filename }}"
-                            src="{{ image.path }}"
-                            alt="{{ image.description }}"
-                            style="max-width: 100%" />
-                    </p>
-                {% endfor %}
-            </div>
-        {% endif %}
-        
-        <p class="info">
-            Posted
-            {% if post.categories.count %} in
-                {% for category in post.categories %}
-                    <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
-                {% endfor %}
+        <div class="col-xs-12 col-lg-9">
+            <p class="article-date">{{ post.published_at|date('d M Y') }}  {{ post.user.first_name }} {{ post.user.last_name }}       
+            <div class="content article">{{ post.content_html|raw }}</div>
+            
+            {% if post.featured_images.count %}
+                <div class="featured-images text-center">
+                    {% for image in post.featured_images %}
+                        <p>
+                            <img
+                                data-src="{{ image.filename }}"
+                                src="{{ image.path }}"
+                                alt="{{ image.description }}"
+                                style="max-width: 100%" />
+                        </p>
+                    {% endfor %}
+                </div>
             {% endif %}
-        </p>
+            
+            <p class="info">
+                Posted
+                {% if post.categories.count %} in
+                    {% for category in post.categories %}
+                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                {% endif %}
+            </p>
+        </div>
     </div>
-    </div>
-   <!-- <div class="container-flex d-flex flex-column justify-content-center">
-        <div class="owl-carousel">
-             {% for photo in album.photos %} 
+    <!--
+    <div class="container d-flex flex-column justify-content-center">
+      
+        {% set album = photoAlbum2.album %}
+       
+        <div class="album-photos row">
+            <div class="owl-carousel owl-three">
+            {% for photo in album.photos %}
                 <div><img src="{{ photo.thumb }}"></div>
-             {% endfor%}
-         </div>
+            {% endfor %}
+             </div>
+        </div>
      </div>
     -->
 </div>
