@@ -12,8 +12,8 @@ class Plugin extends PluginBase
             'Admin\Campaign\Components\Sponsors' => 'sponsors',
             'Admin\Campaign\Components\Years' => 'years',
             'Admin\Campaign\Components\Partners' => 'partners',
-            'Admin\Campaign\Components\PartnersCampaign' => 'partnersCampaign',
-            'Admin\Campaign\Components\CampaignsHomepage' => 'campaignsHomepage',
+            'Admin\Campaign\Components\PartnersCampaign' => 'partnerscampaign',
+            'Admin\Campaign\Components\CampaignsHomepage' => 'campaignshomepage',
         ];
     }
 
