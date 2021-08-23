@@ -8,29 +8,14 @@ default = 0
       {% partial 'meta' %}
       {% partial 'styles' %}
     </head>
-    {% partial 'header' %}
-    {% partial 'navigation' %}
-    <body class="bg-light">
-        {% partial 'header-section' %}
+   
+    <body>
+        {% partial 'header' %}
+        {% partial 'header-home' %}
         {% page %}
         {% partial 'footer' %}
         {% partial 'scripts' %}
         <script>
-          $(document).ready(function(){
-           $(".owl-one").owlCarousel({
-             stagePadding:0,
-             loop:true,
-             responsive : {
-               0 : {
-                 items:1
-               },
-               480 : {
-                 items: 1
-              } ,
-            }
-          })
-        });
-
         $(document).ready(function(){
            $(".owl-trhree").owlCarousel({
              stagePadding:0,
@@ -44,12 +29,10 @@ default = 0
               } ,
             }
           })
-        });
-        $(document).ready(function(){
+ 
            $(".owl-five").owlCarousel({
              stagePadding:0,
-             loop:false,
-             center:false,
+             loop:true,
              responsive : {
                0 : {
                  items:1
