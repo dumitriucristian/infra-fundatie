@@ -1,0 +1,79 @@
+
+<div class="container">
+  <form data-request="onSave">
+    <div class="mb-3">
+      <label for="firstName" class="form-label">prenume</label>
+      <input type="text" class="form-control" name="firstname" id="firstName">
+    </div>
+    <div class="mb-3">
+      <label for="lastName" class="form-label">nume</label>
+      <input type="text" class="form-control" name="lastname" id="lastName">
+    </div>
+    <div class="mb-3">
+      <label for="dadInitial" class="form-label">Initiala tatalui</label>
+      <input type="text" class="form-control" name="dad_initial" id="dadInitial">
+    </div>
+    <div class="mb-3">
+      <label for="cnp" class="form-label">CNP</label>
+      <input type="text" class="form-control" name="cnp" id="cnp">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">email</label>
+      <input type="email" class="form-control" name="email" id="email">
+    </div>
+    <div class="mb-3">
+      <label for="phoneNumber" class="form-label">numar de telefon</label>
+      <input type="text" class="form-control" name="phone_number" id="phoneNumber">
+    </div>
+    <div class="mb-3">
+      <label for="street" class="form-label">strada</label>
+      <input type="text" class="form-control" name="street" id="street">
+    </div>
+    <div class="mb-3">
+      <label for="addressNumber" class="form-label">numar</label>
+      <input type="text" class="form-control" name="address_number"  id="addressNumber">
+    </div>
+    <div class="mb-3">
+      <label for="block" class="form-label">bloc</label>
+      <input type="text" class="form-control" name="block" id="block">
+    </div>
+    <div class="mb-3">
+      <label for="staircase" class="form-label">scara</label>
+      <input type="text" class="form-control" name="staircase" id="staircase">
+    </div>
+    <div class="mb-3">
+      <label for="floor" class="form-label">etaj</label>
+      <input type="text" class="form-control" name="floor" id="floor">
+    </div>
+    <div class="mb-3">
+      <label for="apartament" class="form-label">apartament</label>
+      <input type="text" class="form-control" name="apartement" id="apartament">
+    </div>
+    <div class="mb-3">
+      <label for="county" class="form-label">judet</label>
+      <input type="text" class="form-control" name="county" id="county">
+    </div>
+    <div class="mb-3">
+      <label for="city" class="form-label">localitate</label>
+      <input type="text" class="form-control" name="city" id="city">
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="income_type" value="pensie/salariu" id="incomeType1">
+      <label class="form-check-label" for="incomeType1">
+        Pensie/salariu
+      </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="income_type" value="alta" id="incomeType2">
+    <label class="form-check-label" for="incomeType2">
+      Alte tipuri de venituri:drepturi de autor, etc.
+    </label>
+  </div>
+  <ul>
+    {% for error in errors.all() %}
+      <li>{{ error }}</li>
+    {% endfor %}
+  </ul>
+    <button type="submit" class="btn btn-primary">pasul urmator</button>
+  </form>
+</div> 
