@@ -5,7 +5,7 @@ use Request;
 use Admin\Campaign\Traits\SingleCampaignTrait;
 use Log;
 
-class SingleCampaign extends ComponentBase
+class Singlecampaign extends ComponentBase
 {
     use SingleCampaignTrait;
 
