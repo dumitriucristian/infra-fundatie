@@ -66,6 +66,11 @@ class Search extends WidgetBase
     public $cssClasses = [];
 
     /**
+     * @var string listWidgetId
+     */
+    public $listWidgetId;
+
+    /**
      * Initialize the widget, called by the constructor and free from its parameters.
      */
     public function init()
@@ -82,6 +87,14 @@ class Search extends WidgetBase
         if ($this->growable) {
             $this->cssClasses[] = 'growable';
         }
+    }
+
+    /**
+     * @inheritDoc
+     */
+    protected function loadAssets()
+    {
+        $this->addJs('js/october.search.js', 'core');
     }
 
     /**

@@ -255,7 +255,8 @@ class RecordFinder extends FormWidgetBase
             if ($model !== null) {
                 $value = $model->{$attribute};
             }
-        } else {
+        }
+        else {
             $value = $this->modelClass::find(parent::getLoadValue());
         }
 
@@ -268,9 +269,9 @@ class RecordFinder extends FormWidgetBase
             return null;
         }
 
-        return $this->useRelation ?
-            $this->relationModel->{$this->keyFrom} :
-            $this->formField->value;
+        return $this->useRelation
+            ? $this->relationModel->{$this->keyFrom}
+            : $this->formField->value;
     }
 
     public function getNameValue()

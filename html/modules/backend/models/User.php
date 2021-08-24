@@ -2,6 +2,7 @@
 
 use Mail;
 use Event;
+use Config;
 use Backend;
 use October\Rain\Auth\Models\User as UserBase;
 
@@ -81,11 +82,7 @@ class User extends UserBase
      */
     public function getPersistCode()
     {
-        // Option A: @todo config
-        // return parent::getPersistCode();
-
-        // Option B:
-        if (!$this->persist_code) {
+        if (!$this->persist_code || Config::get('backend.force_single_session', false)) {
             return parent::getPersistCode();
         }
 

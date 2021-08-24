@@ -6,7 +6,8 @@ class Plugin extends PluginBase
 {
     public function registerComponents()
     {
-        return [
+       return [
+
             'admin\campaign\components\campaigns' => 'campaigns',
             'admin\campaign\components\singlecampaign' =>'campaign',
             'admin\campaign\components\sponsors' => 'sponsors',
